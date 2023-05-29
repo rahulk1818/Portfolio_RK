@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kushwaha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            background-image: url(pic/profile1.jpg); 
+            background-size: cover;
+            
+            
+        }
+        ul{
+            color: white;
+        }
+        
+        p{
+            font-size: 18px;
+            
+        }
+        
+        .power{
+            width: 20%;
+            height: 15px;
+            margin-top: 2%;
+            margin-left: 3%;
+            float: left;
+        }
+        .write{
+            margin: 10%;
+          
+        }
+        .pmain{
+          
+            width: 100%;
+        }
+        .pwrite{
+            width: 80%;
+            height: 18px;
+            margin-top: -20px;
+            float: left;
+        }
+        .mpower{
+            width: 20%;
+           
+            float: left;
+        }
+       
+        
+       
+        
+
+        
+.navbar .options.active {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+}
+
+        
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: transparent;
+        }
+
+        .navbar-logo {
+            margin-right: auto;
+        }
+
+        .navbar a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .navbar .menu-icon {
+            display: none;
+            cursor: pointer;
+            padding-top: 3px;
+            padding-right: 10px;
+            font-size: 24px;
+            background-color: transparent;
+            border: none;
+            border-radius: 10%;
+        }
+
+        .navbar .options {
+            display: flex;
+            
+        }
+
+        .navbar .options a:hover {
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #4f4f4f;
+            border-radius: 10%;
+        }
+       
+
+        /* Responsive navigation */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                background-color: transparent;
+            }
+
+            p{
+            font-size: 18px;
+            
+        }
+        .navbar .options a:hover {
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #4f4f4f;
+            border-radius: 10%;
+        }
+        .button:hover{
+            transform: scale(1.3);
+            transition: all 0.5s;
+            background-color: aqua;
+        }
+
+            .navbar-logo {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            .navbar .menu-icon {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 1;
+            }
+
+            .navbar .menu-icon:hover {
+                background-color: #787777;
+            }
+
+            .navbar .menu-icon.active {
+                background-color: #515151;
+            }
+
+            .navbar .options {
+                display: none;
+                flex-direction: column;
+                background-color: #000000;
+                padding: 5px;
+                padding-left: 7%;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                width: 100%;
+            }
+
+            .navbar .options a {
+                font-size: 18px;
+                padding: 8px;
+                transition: all 0.3s;
+            }
+
+            .navbar .options.active {
+                display: flex;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menuIcon = document.getElementById("menuIcon");
+            var options = document.getElementById("options");
+            menuIcon.classList.toggle("active");
+            options.classList.toggle("active");
+        }
+
+        window.addEventListener("DOMContentLoaded", function() {
+            var sentences = ["I'm proficient in data analytics.", " Software development."]; // Replace with your desired sentences
+            var sentenceIndex = 0;
+            var alphabetIndex = 0;
+            var sentenceElement = document.getElementById("sentence");
+
+            function presentSentence() {
+                var sentence = sentences[sentenceIndex];
+                if (alphabetIndex < sentence.length) {
+                    sentenceElement.textContent += sentence.charAt(alphabetIndex);
+                    alphabetIndex++;
+                } else {
+                    sentenceElement.textContent = "";
+                    alphabetIndex = 0;
+                    sentenceIndex++;
+                    if (sentenceIndex >= sentences.length) {
+                        sentenceIndex = 0;
+                    }
+                }
+            }
+
+            setInterval(presentSentence, 150); // Change the interval duration (in milliseconds) as desired
+        });
+    </script>
+</head>
+<body>
+  <div>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="profile.html"><img src="pic/logop.png" alt="Logo" style="width: 40px;  padding-top: -10px;" ></a>
+        </div>
+        <div class="options" id="options">
+            <a href="resume.html"><b>Resume</b></a>
+            <a href="Certificate.html"><b>Certificate</b></a>
+            <a href="proficiency.html"><b>proficiency</b></a>
+            <a href="contact.html"><b>Contact</b></a>
+        </div>
+        <button class="menu-icon" id="menuIcon" onclick="toggleMenu()" style="color: #ffffff;">&#9776;</button>
+    </div>
+    <div  class="write">
+        <h1 style="color: white;">Projects :</h1>
+        <ul>
+            <li><p><b>Metropolitan City</b>
+            <br> <br> <b>   &nbsp &nbsp Description :</b> The project is to provide a user-friendly application and show how Metropolitan City Guide using Database
+            benefits users. The user overlooks all the time to know right and accurate information about the city.
+            <br> <br><b> &nbsp &nbsp Technology Used :</b> Java, SQL</p></li>
+
+
+            <li><p><b>Color Detection</b>
+                <br> <br> <b>   &nbsp &nbsp Description :</b>  In this color detection Python project, we are going to build an application through which you can
+                automatically get the name of the color by clicking on them.
+                <br> <br><b> &nbsp &nbsp Technology Used :</b>  Python ,Pandas & OpenCV</p></li>
+
+            <li><p><b> Sentiment Analysis</b>
+                <br> <br> <b>   &nbsp &nbsp Description :</b>  Python sentiment analysis is a methodology for analyzing a piece of text to discover the sentiment hidden
+                within it. It accomplishes this by combining machine learning and natural language processing (NLP).
+                
+                <br> <br><b> &nbsp &nbsp Technology Used :</b>  Python , Pandas , Matplotlib ,TensorFlow
+            </p></li>
+        </ul>
+        
+        
+        <h1 style="color: white;"> Technical Skills :-</h1>
+            <ul class="tech" style="padding-left: 10%;">
+                <li ><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    </div>
+                    <div class="pwrite"><p>Python</p></div>
+                </div>
+                </li>
+                <li><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:white ;"></div>
+                    </div>
+                    <div class="pwrite"><p>Powar BI</p></div>
+                </div>
+                    </li>
+                <li ><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    </div>
+                    <div class="pwrite"><p>Web Scraping using Python</p></div>
+                </div>
+                    </li>
+                
+                <li ><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:white ;"></div>
+                    </div>
+                    <div class="pwrite"><p>SQL</p></div>
+                </div>
+                </li>
+                <li ><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:white ;"></div>
+                    </div>
+                    <div class="pwrite"><p>Java</p></div>
+                </div>
+                </li>
+                <li><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: red;"></div>
+                    <div class="power" style="background-color:red ;"></div>
+                    <div class="power" style="background-color:white;"></div>
+                    <div class="power" style="background-color:white ;"></div>
+                    </div>
+                    <div class="pwrite"><p>Java Software Developer</p></div>
+                </div>
+                </li>
+                <li ><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    </div>
+                    <div class="pwrite"><p>HTML</p></div>
+                </div>
+                </li>
+                <li><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow  ;"></div>
+                    <div class="power" style="background-color:greenyellow ;"></div>
+                    <div class="power" style="background-color:greenyellow ;"></div>
+                    </div>
+                    <div class="pwrite"><p>CSS</p></div>
+                </div>
+                </li>
+                <li ><div class="pmain">
+                    <div class="mpower">
+                    <div class="power" style="background-color: red;"></div>
+                    <div class="power" style="background-color:red ;"></div>
+                    <div class="power" style="background-color:#ffffff ;"></div>
+                    <div class="power" style="background-color:#ffffff ;"></div>
+                    </div>
+                    <div class="pwrite"><p>Java Script</p></div>
+                </div>
+                </li>
+            </ul>
+            <h1 style="color: white;">Interpersonal :-</h1>
+            <ul class="Non-tech" style="padding-left: 10%;">
+                <li><p>Team Work</p></li>
+                <li><p>Time Management</p></li>
+            </ul>
+        
+    </div>
+
+  </div>
+</body>
+</html>

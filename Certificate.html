@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kushwaha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            background-image: url(pic/profile1.jpg); 
+            background-size: cover;
+            
+            
+        }
+        img{
+            width: 100%;
+            
+        }
+        
+       
+        .pcet{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 5%;
+            margin-top: 5%;
+        }
+        
+
+        .pcet:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+        
+
+        
+.navbar .options.active {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+}
+
+        
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: transparent;
+        }
+
+        .navbar-logo {
+            margin-right: auto;
+        }
+
+        .navbar a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .navbar .menu-icon {
+            display: none;
+            cursor: pointer;
+            padding-top: 3px;
+            padding-right: 10px;
+            font-size: 24px;
+            background-color: transparent;
+            border: none;
+            border-radius: 10%;
+        }
+
+        .navbar .options {
+            display: flex;
+            
+        }
+
+        .navbar .options a:hover {
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #4f4f4f;
+            border-radius: 10%;
+        }
+       
+
+        /* Responsive navigation */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                background-color: transparent;
+            }
+            
+
+            .navbar-logo {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            .navbar .menu-icon {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 1;
+            }
+
+            .navbar .menu-icon:hover {
+                background-color: #787777;
+            }
+
+            .navbar .menu-icon.active {
+                background-color: #515151;
+            }
+
+            .navbar .options {
+                display: none;
+                flex-direction: column;
+                background-color: #000000;
+                padding: 5px;
+                padding-left: 7%;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                width: 100%;
+            }
+
+            .navbar .options a {
+                font-size: 18px;
+                padding: 8px;
+                transition: all 0.3s;
+            }
+
+            .navbar .options.active {
+                display: flex;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menuIcon = document.getElementById("menuIcon");
+            var options = document.getElementById("options");
+            menuIcon.classList.toggle("active");
+            options.classList.toggle("active");
+        }
+
+        window.addEventListener("DOMContentLoaded", function() {
+            var sentences = ["I'm proficient in data analytics.", " Software development."]; // Replace with your desired sentences
+            var sentenceIndex = 0;
+            var alphabetIndex = 0;
+            var sentenceElement = document.getElementById("sentence");
+
+            function presentSentence() {
+                var sentence = sentences[sentenceIndex];
+                if (alphabetIndex < sentence.length) {
+                    sentenceElement.textContent += sentence.charAt(alphabetIndex);
+                    alphabetIndex++;
+                } else {
+                    sentenceElement.textContent = "";
+                    alphabetIndex = 0;
+                    sentenceIndex++;
+                    if (sentenceIndex >= sentences.length) {
+                        sentenceIndex = 0;
+                    }
+                }
+            }
+
+            setInterval(presentSentence, 150); // Change the interval duration (in milliseconds) as desired
+        });
+    </script>
+</head>
+<body>
+  <div>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="profile.html"><img src="pic/logop.png" alt="Logo" style="width: 40px;  padding-top: -10px;" ></a>
+        </div>
+        <div class="options" id="options">
+            <a href="resume.html"><b>Resume</b></a>
+            <a href="Certificate.html"><b>Certificate</b></a>
+            <a href="proficiency.html"><b>proficiency</b></a>
+            <a href="contact.html"><b>Contact</b></a>
+        </div>
+        <button class="menu-icon" id="menuIcon" onclick="toggleMenu()" style="color: #ffffff;">&#9776;</button>
+    </div>
+    <div class="mcet">
+        <h3 style="color: #ffffff; text-align: center; padding: 5%;">"I have successfully amassed an impressive collection of certificates thus far."</h3>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1yEbIv45mtflSRSzmFCQ4eQAqW0cs3t-S/view?usp=sharing" target="_blank"><img src="pic/google final.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1tM3YOaYJekGKuwTqNu8vLUjNFym4_WZF/view?usp=sharing" target="_blank"><img src="pic/Cisco Intro to IoT.jpg" ></a> </div>
+
+            <div class="pcet"><a href="https://drive.google.com/file/d/1AFwrvj0uHLaE7a2aHyA86iqN5ZZZJ5Hf/view?usp=sharing" target="_blank"><img src="pic/Data Analytics with Python.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1z8oUrPQwGKLBpR_eJQJO98YiTYP_yx-P/view?usp=sharing" target="_blank"><img src="pic/Introduction To Internet Of Things.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1FtCqX__GCdrU6RFn-NiJyfpZb29iP-z5/view?usp=sharing" target="_blank"><img src="pic/Enhancing Soft Skills and Personality.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1qZD3JKZXT6N9wCWOej1femkfl33gAux6/view?usp=sharing" target="_blank"><img src="pic/python.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1E7n05LAdIs9s6a_yfWJZwLxiHN0mW6QI/view?usp=sharing" target="_blank"><img src="pic/NIPAM.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1su3KS-uYT-LH2E27S_2OIJCI5q32vB-D/view?usp=sharing" target="_blank"><img src="pic/html.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1xvcQBMQsbUtAfpaZRioMcm0WU0PFS3e4/view?usp=sharing" target="_blank"><img src="pic/google 1.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1oscn6lCjVYgZqDSEfscNkePFTjaAoPTB/view?usp=sharing" target="_blank"><img src="pic/google 2.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1YY_AI-JhIvUekhno7W2gZpe1XzXPLlSV/view?usp=sharing" target="_blank"><img src="pic/google 3.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1J5T7il7qBpC5RIgqVfEQ3CzCLH2_X7RX/view?usp=sharing" target="_blank"><img src="pic/google 4.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/16QvhiC-WszfdkOApi-nPjfYDjq4bVekt/view?usp=sharing" target="_blank"><img src="pic/google 5.jpg" ></a> </div>
+            
+            <div class="pcet"><a href="https://drive.google.com/file/d/1mQRML1925o89Gf1wjOQdfe6RTGOXv-hs/view?usp=sharing" target="_blank"><img src="pic/google 6.jpg" ></a> </div>
+    </div>
+    
+    
+  </div>
+</body>
+</html>

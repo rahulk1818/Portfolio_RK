@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kushwaha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            background-image: url(pic/profile1.jpg); 
+            background-size: cover;
+            
+            
+        }
+        .aboutme {
+        clear: both; /* Clear the floating elements */
+        width: 100%;
+       
+        text-align: center;
+        font-size: 40%;
+    }
+        .profile{
+           
+            width: 100%;
+            height: 650px;
+        }
+        .write1{
+          
+            width: 60%;
+            margin-left: 10%;
+            margin-top: 5%;
+            float: left;
+        }
+        .image1{
+          
+            width: 30%;
+            margin-top: 5%;
+            float: left;
+        }
+        .pic{
+            width: 25%;
+            margin: 0 auto;
+        }
+        .pic:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+        .about{
+            margin-right: 10%;
+            margin-left: 10%;
+           
+            margin-top: 50px;
+        }
+        .conimg{
+          width: 40px;
+          border-radius: 100%;
+        }
+        .conimg:hover{
+            transform: scale(1.3);
+            transition: all 0.3s;
+        }
+        
+        .con {
+            display: inline-block; /* Display the social icons inline */
+            padding: 10px;
+            }
+            .condiv{
+                width: 300px;
+               
+                margin: 0 auto;
+            }
+
+
+
+@media screen and (max-width: 1400px) {
+  
+  .navbar .options a:hover {
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #4f4f4f;
+            border-radius: 10%;
+        }
+        .write1{
+           
+            width: 60%;
+            margin-left: 3%;
+            float: left;
+        }
+        .profile{
+            height: 700px;
+
+        }
+        .image1{
+           
+            width: 35%;
+            float: left;
+        }
+        .pic{
+            width: 40%;
+            margin: 0 auto;
+        }
+        
+
+}
+
+@media screen and (max-width: 1164px) {
+ 
+          
+ .conimg:hover{
+           transform: scale(1.3);
+           transition: all 0.3s;
+       }
+
+
+ .navbar .options a:hover {
+           transform: scale(1.1);
+           color: #fff;
+           background-color: #4f4f4f;
+           border-radius: 10%;
+       }
+       .write1{
+         
+           width: 60%;
+           margin-left: 0%;
+           float: left;
+       }
+       .image1{
+          
+           width: 40%;
+           float: left;
+       }
+       .profile{
+           height: 700px;
+       }
+       .pic{
+            width: 40%;
+            margin: 0 auto;
+        }
+       
+
+        }
+
+
+       
+
+
+        .navbar .options.active {
+            display: flex;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            width: 100%;
+            z-index: 1;
+            background-color: #000000;
+        }
+
+        
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: transparent;
+        }
+
+        .navbar-logo {
+            margin-right: auto;
+        }
+
+        .navbar a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .navbar .menu-icon {
+            display: none;
+            cursor: pointer;
+            padding-top: 3px;
+            padding-right: 10px;
+            font-size: 24px;
+            background-color: transparent;
+            border: none;
+            border-radius: 10%;
+        }
+
+        .navbar .options {
+            display: flex;
+            
+        }
+
+        .navbar .options a:hover {
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #4f4f4f;
+            border-radius: 10%;
+        }
+       
+
+        @media screen and (max-width: 1000px) {
+           
+            .write1{
+           
+            width: 90%;
+            margin-left: 10%;
+        }
+        .image1{
+           
+            width: 60%;
+            margin-left: 10%;
+        }
+        .profile{
+            height: 1200px;
+        }
+        .pic{
+            width: 40%;
+            margin: 0 auto;
+        }
+    }
+
+        /* Responsive navigation */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                background-color: transparent;
+            }
+            .write1{
+           
+            width: 90%;
+            margin-left: 10%;
+        }
+        .image1{
+           
+            width: 90%;
+            margin-left: 10%;
+        }
+        .profile{
+            height: 1000px;
+        }
+        .pic{
+            width: 40%;
+            margin: 0 auto;
+        }
+        .navbar .options a:hover {
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #4f4f4f;
+            border-radius: 10%;
+        }
+           
+
+            .navbar-logo {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            .navbar .menu-icon {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 1;
+            }
+            .conimg:hover{
+            transform: scale(1.3);
+            transition: all 0.3s;
+        }
+        .navbar .options a:hover {
+            transform: scale(1.1);
+            color: #fff;
+            background-color: #4f4f4f;
+            border-radius: 10%;
+        }
+
+            .navbar .menu-icon:hover {
+                background-color: #787777;
+            }
+
+            .navbar .menu-icon.active {
+                background-color: #515151;
+            }
+
+            .navbar .options {
+                display: none;
+                flex-direction: column;
+                background-color: #000000;
+                padding: 5px;
+                padding-left: 7%;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                width: 100%;
+            }
+
+            .navbar .options a {
+                font-size: 18px;
+                padding: 8px;
+                transition: all 0.3s;
+            }
+
+            .navbar .options.active {
+                display: flex;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menuIcon = document.getElementById("menuIcon");
+            var options = document.getElementById("options");
+            menuIcon.classList.toggle("active");
+            options.classList.toggle("active");
+        }
+
+        window.addEventListener("DOMContentLoaded", function() {
+            var sentences = ["I'm proficient in data analytics.", " Software development."]; // Replace with your desired sentences
+            var sentenceIndex = 0;
+            var alphabetIndex = 0;
+            var sentenceElement = document.getElementById("sentence");
+
+            function presentSentence() {
+                var sentence = sentences[sentenceIndex];
+                if (alphabetIndex < sentence.length) {
+                    sentenceElement.textContent += sentence.charAt(alphabetIndex);
+                    alphabetIndex++;
+                } else {
+                    sentenceElement.textContent = "";
+                    alphabetIndex = 0;
+                    sentenceIndex++;
+                    if (sentenceIndex >= sentences.length) {
+                        sentenceIndex = 0;
+                    }
+                }
+            }
+
+            setInterval(presentSentence, 150); // Change the interval duration (in milliseconds) as desired
+        });
+    </script>
+</head>
+<body>
+  <div>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="pic/logop.png" alt="Logo" style="width: 40px;  padding-top: -10px;" ></a>
+        </div>
+        <div class="options" id="options">
+            <a href="resume.html"><b>Resume</b></a>
+            <a href="Certificate.html"><b>Certificate</b></a>
+            <a href="proficiency.html"><b>proficiency</b></a>
+            <a href="contact.html"><b>Contact</b></a>
+        </div>
+        <button class="menu-icon" id="menuIcon" onclick="toggleMenu()" style="color: #ffffff;">&#9776;</button>
+    </div>
+    <div class="profile">
+        <div class="write1">
+            <p style="color: white; font-size: 27px; padding-left: 5%;"><b>Hello</b></p>
+            <p style="color: white; font-size: 50px; padding-left: 10%;"><b>I'm</b> <b style="color: rgb(72, 248, 245); font-size: 55px;"><b>Rahul</b></p>
+            <p style="color: rgb(72, 248, 245); font-size: 55px; padding-left: 10%;">Kushwaha</p>
+            <h1 id="sentence" style="color: #ffffff; font-size: 50px;"></h1>
+           </div>
+           <div class="image1"><img src="pic/rk1.png" alt="image of a people who use laptop" style="width: 100%;"> </div>
+
+           
+
+    </div>
+    <div class="aboutme">
+        <h1>About me </h1>
+    </div>
+    <div class="pic">
+        <img src="pic/rahul2.png" alt="Rahul's picture" style="width: 100%;">
+    </div>
+    <div class="about">
+        <p style="font-size:25px; font-family:lora; color: #ffffff;">I am a data analyst. I have one year of experience working with Power BI and SQL, and two years of experience working with Python.
+            <br> I am currently pursuing my B.Tech degree from Krishna Engineering College, Ghaziabad.
+            <br> I am also a the lab manager at Pathchare Blood testing lab, I lead a team of 5 to 6 professionals, 
+            ensuring smooth operations and efficient management of tests.
+             With expertise in recommending the best blood tests for your specific needs,
+            I possess strong <b style="color: aqua;">convincing skills </b> , <b style="color: aqua;">team management</b>
+             and also <b style="color: aqua;">time management skill</b>.
+
+            <br> Additionally, my technical skills include intermediate knowledge of <b style="color: aqua;">Python</b>,
+            <b style="color: aqua;">Java</b>, along with experience in <b style="color: aqua;">Power BI</b> and <b style="color: aqua;">SQl</b>.
+               This website has been meticulously created by me using proper HTML , CSS and Java script code.</p>
+
+    </div>
+    <div class="contactdiv">
+        <hr>
+        <div class="contact"><p style="font-size:18px; color: #ffffff; text-align: center;">Feel free to Connect with me on socials</p>
+        <div class="condiv">
+        <div class="con"><a href="https://www.linkedin.com/in/rahul-kushwaha1818" target="_blank" ><img src="pic/linkedin.png" class="conimg" ></a></div>
+        <div class="con"><a href="mailto:rkushwaha1818@gmail.com"  target="_blank"><img src="pic/mail.png" class="conimg" ></a></div>
+        <div class="con"><a href="https://wa.me/9899010858" target="_blank" ><img src="pic/whatsapp.jpeg" class="conimg" ></a></div>
+        <div class="con"><a href="https://instagram.com/rkushwaha1818?igshid=NGExMmI2YTkyZg==" target="_blank"><img src="pic/insta.jpeg" class="conimg" ></a></div>
+    </div>
+      </div>
+      </div>
+    
+    
+    
+  </div>
+</body>
+</html>
